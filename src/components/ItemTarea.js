@@ -8,7 +8,7 @@ const ItemTarea = (props) => {
                 {props.tareaCargada}
                 <div className="d-flex justify-content-beetwen">
                     <Button
-                        variant="danger"
+                        variant="warning"
                         onClick={() => props.borrarTarea(props.tareaCargada)}
                     >
                     Borrar
