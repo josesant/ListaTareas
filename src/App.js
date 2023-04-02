@@ -7,7 +7,7 @@ import Formulario from './components/Formulario';
 const App = () => {
     return (
         <div>
-            <section className='container my-5'>
+            <section className='container my-5 text'>
                 <Titulo/>
                 <Subtitulo/>
                 <Formulario/>
