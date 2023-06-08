@@ -38,10 +38,10 @@ const ItemToDo = ({ todo, deleteTodo, editTodo, updateTodo, cancelEdit, editingT
                         </div>
                         <div className="col-4 col-md-2 p-0">
                             <div className="btn-group d-flex justify-content-center">
-                                <button className="btn btn-warning me-1" onClick={handleEdit} disabled={editingTodo !== null}                                >
+                                <button className="btn btn-warning me-1 btn-sm" onClick={handleEdit} disabled={editingTodo !== null}                                >
                                     <FaPen />
                                 </button>
-                                <button onClick={() => deleteTodo(todo.id)} className="btn btn-danger text-dark">
+                                <button onClick={() => deleteTodo(todo.id)} className="btn btn-sm btn-danger text-dark">
                                     <FaTrash />
                                 </button>
                             </div>

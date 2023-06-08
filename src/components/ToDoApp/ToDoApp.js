@@ -22,11 +22,11 @@ const ToDoApp = () => {
     } = UseToDo();
 
     return (
-        <div className="card w-100" style={{ maxHeight: "700px", height: "700px" }}>
+        <div className="card w-100" style={{ maxHeight: "650px", height: "600px" }}>
             <div className="card-header text-center">
                 <h1>Lista de tareas</h1>
             </div>
-            <div className="card-body">
+            <div className="card-body p-0">
                 <div className="container">
                     <FormAddToDo addTodo={addTodo} setFilter={setFilter} />
                     <ListToDo
