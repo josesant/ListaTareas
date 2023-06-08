@@ -52,8 +52,9 @@ const ToDoApp = () => {
                         Pendientes:<span className='badge bg-danger ms-2'>{countPending}</span>
                     </div>
                 </div>
-                <div className="col text-center mt-1">
-                    <strong>Dev:Santillan jose Miguel - Tel:3814903871</strong>
+                <hr className='m-1'/>
+                <div className="col text-center">
+                    <span>Dev:Santillan jose Miguel - Tel:3814903871</span>
                 </div>
             </div>
         </div>

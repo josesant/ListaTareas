@@ -25,7 +25,7 @@ const ItemToDo = ({ todo, deleteTodo, editTodo, updateTodo, cancelEdit, editingT
                 ) : (
                     <>
                         <div className="col-8 col-md-10 d-flex p-0">
-                            <div className="form-check d-flex align-items-center ms-4">
+                            <div className="form-check d-flex align-items-center ms-1">
                                 <input 
                                     className="form-check-input me-2" 
                                     type="checkbox"
