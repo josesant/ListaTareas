@@ -5,7 +5,7 @@ import ItemTarea from './ItemTarea';
 const ListaTareas = (props) => {
     return (
         <div>
-            <ListGroup>
+            <ListGroup> 
 
                 {
                     //mapeo el arreglo para poder acceder a los datos
