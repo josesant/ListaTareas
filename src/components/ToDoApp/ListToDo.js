@@ -10,7 +10,7 @@ const ListToDo = ({ todos, filter, deleteTodo, editTodo, updateTodo, cancelEdit,
     }
 
     return (
-        <ul className="list-group border mt-3" style={{ maxHeight: "445px", overflow: "auto" }}>
+        <ul className="list-group border mt-3" style={{ maxHeight: "400px", overflow: "auto" }}>
             {filteredTodos.map((todo, index) => (
                 <ItemToDo
                     key={index}
