@@ -1,6 +1,5 @@
 import React from "react";
 import ItemToDo from "./ItemToDo";
-import UseToDo from "../../hooks/UseToDo";
 
 const ListToDo = ({ todos, filter, deleteTodo, editTodo, updateTodo, cancelEdit, editingTodo, editedTodo, setEditedTodo, changeState }) => {
     let filteredTodos = todos;

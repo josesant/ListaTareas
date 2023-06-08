@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from 'react';
 import { FaRegWindowClose, FaRegCheckSquare } from 'react-icons/fa';
-import UseToDo from '../../hooks/UseToDo';
 
 const FormUpdateToDo = ({ handleUpdate, handleCancel,editedTodo ,setEditedTodo}) => {
 

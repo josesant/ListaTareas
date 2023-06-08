@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { FaPlus } from 'react-icons/fa';
-import UseToDo from "../../hooks/UseToDo";
 
 const FormTodoAdd = ({addTodo,setFilter,filter }) => {
     const [inputValue, setInputValue] = useState("");
