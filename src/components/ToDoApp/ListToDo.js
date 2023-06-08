@@ -10,21 +10,26 @@ const ListToDo = ({ todos, filter, deleteTodo, editTodo, updateTodo, cancelEdit,
     }
 
     return (
-        <ul className="list-group border mt-3" style={{ maxHeight: "320px", overflow: "auto" }}>
-            {filteredTodos.map((todo, index) => (
-                <ItemToDo
-                    key={index}
-                    todo={todo}
-                    deleteTodo={deleteTodo}
-                    editTodo={editTodo}
-                    updateTodo={updateTodo}
-                    cancelEdit={cancelEdit}
-                    editingTodo={editingTodo}
-                    editedTodo={editedTodo}
-                    setEditedTodo={setEditedTodo}
-                    changeState={changeState}              
-                />
-            ))}
+        <ul className="list-group border mt-3" style={{ height: "320px", overflow: "auto" }}>
+            {filteredTodos.length === 0 ? (
+                <span className="text-center">No hay tareas para realizar.</span>
+            ) : (
+                filteredTodos.map((todo, index) => (
+                    <ItemToDo
+                        key={index}
+                        todo={todo}
+                        deleteTodo={deleteTodo}
+                        editTodo={editTodo}
+                        updateTodo={updateTodo}
+                        cancelEdit={cancelEdit}
+                        editingTodo={editingTodo}
+                        editedTodo={editedTodo}
+                        setEditedTodo={setEditedTodo}
+                        changeState={changeState}
+                    />
+                ))
+            )}
+
         </ul>
     );
 };

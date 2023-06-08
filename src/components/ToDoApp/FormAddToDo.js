@@ -19,8 +19,8 @@ const FormTodoAdd = ({addTodo,setFilter,filter }) => {
         <form onSubmit={handleSubmit}>
             <div className="row" style={{ fontSize: '20px'}}>
                 <div className="col-12 col-md-3">
-                    <div className="form-group">
-                        <label className="form-label" htmlFor="filtro">FILTRO</label>
+                    <div className="form-group text-center">
+                        <label className="form-label" htmlFor="filtro">Filtro</label>
                         <select id="filtro" className="form-select" value={filter} onChange={(e) => setFilter(e.target.value)}>
                             <option value="todos">Todos</option>
                             <option value="realizadas">Realizadas</option>
@@ -29,8 +29,7 @@ const FormTodoAdd = ({addTodo,setFilter,filter }) => {
                     </div>
                 </div>
                 <div className="col-12 col-md-9 d-flex align-items-end">
-                    <div className="form-group flex-grow-1 me-3">
-                        <label className="form-label" htmlFor="inputTodo">NUEVA TAREA</label>
+                    <div className="form-group flex-grow-1 me-3 text-center mt-2">                        
                         <input
                             id="inputTodo"
                             className="form-control"
