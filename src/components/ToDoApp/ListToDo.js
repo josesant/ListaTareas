@@ -10,7 +10,7 @@ const ListToDo = ({ todos, filter, deleteTodo, editTodo, updateTodo, cancelEdit,
     }
 
     return (
-        <ul className="list-group border mt-3" style={{ height: "320px", overflow: "auto" }}>
+        <ul className="list-group border mt-3" style={{ maxHeight:'350px' , overflow: "auto" }}>
             {filteredTodos.length === 0 ? (
                 <span className="text-center">No hay tareas para realizar.</span>
             ) : (
