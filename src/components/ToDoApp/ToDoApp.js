@@ -22,7 +22,7 @@ const ToDoApp = () => {
     } = UseToDo();
 
     return (
-        <div className="card w-100" style={{ maxHeight: "650px", height: "600px" }}>
+        <div className="card w-100" style={{height: "600px" }}>
             <div className="card-header text-center">
                 <h1>Lista de tareas</h1>
             </div>
