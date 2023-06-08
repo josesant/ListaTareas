@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from 'react';
+import {useState,useEffect} from 'react';
 
 const UseToDo = () => {
 
@@ -7,7 +7,9 @@ const UseToDo = () => {
     const [editingTodo, setEditingTodo] = useState(null);
     const [editedTodo, setEditedTodo] = useState(''); 
     const [filter, setFilter] = useState('todas');
+
     const [changeStateTodo, setChangeStateTodo] = useState(null);
+    
     const [countPending, setCountPending] = useState(0); // Contador de tareas pendientes
     const [countDone, setCountDone] = useState(0);
 
