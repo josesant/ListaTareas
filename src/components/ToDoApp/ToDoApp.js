@@ -22,7 +22,7 @@ const ToDoApp = () => {
     } = UseToDo();
 
     return (
-        <div className="card w-100" style={{height: "600px" }}>
+        <div className="card w-100" style={{height: "630px" }}>
             <div className="card-header text-center">
                 <h1>Lista de tareas</h1>
             </div>
@@ -43,12 +43,17 @@ const ToDoApp = () => {
                     />
                 </div>
             </div>
-            <div className="card-footer d-flex justify-content-between">
-                <div>
-                    Realizadas:<span className='badge bg-success ms-2'>{countDone}</span>
+            <div className="card-footer ">
+                <div className="col d-flex justify-content-between">
+                    <div>
+                        Realizadas:<span className='badge bg-success ms-2'>{countDone}</span>
+                    </div>
+                    <div>
+                        Pendientes:<span className='badge bg-danger ms-2'>{countPending}</span>
+                    </div>
                 </div>
-                <div>
-                    Pendientes:<span className='badge bg-danger ms-2'>{countPending}</span>
+                <div className="col text-center mt-1">
+                    <strong>Dev:Santillan jose Miguel - Tel:3814903871</strong>
                 </div>
             </div>
         </div>
