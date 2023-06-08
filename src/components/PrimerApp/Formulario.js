@@ -16,7 +16,6 @@ const Formulario = () => {
 
     //Ciclo de vida del componente
     useEffect(() => {
-        console.log("useEffect");
         localStorage.setItem("tareas", JSON.stringify(arregloTareas));
     }, [arregloTareas]);
 
